@@ -41,28 +41,15 @@ public class LAB08_TestNG_a {
 		
   }
   
-  @org.testng.annotations.Parameters("browser")
   @BeforeMethod
-  public void beforeMethod(String brow) {
+  public void beforeMethod() {
 	  System.out.println("This is Before Method");
-	  if(brow.equalsIgnoreCase("chrome"))
-	  {
 	  WebDriverManager.chromedriver().setup();
 		 driver=new ChromeDriver();
-	  }
-	  if(brow.equalsIgnoreCase("edge"))
-	  {
-	  WebDriverManager.edgedriver().setup();
-		 driver=new EdgeDriver();
-	  }
-	  if(brow.equalsIgnoreCase("firefox"))
-	  {
-	  WebDriverManager.firefoxdriver().setup();
-		 driver=new FirefoxDriver();
-	  }
-	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		 driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
   }
-
+	
   @AfterMethod
   public void afterMethod() {
 	  System.out.println("This is After Method");
