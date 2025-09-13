@@ -1,0 +1,108 @@
+java -jar jenkins.war
+ 
+git init
+git add .
+git commit -m "This is my first commit"
+git config --global user.name "Saritha"
+git config --global user.email "saritha2k5@gmail.com"
+git remote add origin https://github.com/saritha2k5/april2023.git
+//git remote add origin https://github.com/saritha2k5/27thmay2024.git
+git remote -v
+git branch -M main
+git push -u origin main --force
+git push origin master
+
+
+
+----------------------------------------------------------------------------
+
+
+# 🔹 Step-by-Step: Pushing Your Eclipse Project (after `git init`)
+
+Assume your Eclipse project folder is something like:
+
+and inside it you already did:
+
+```bash
+git init
+```
+---
+
+## 1. Add the remote (if not already)
+
+```bash
+git remote add origin https://github.com/viratkohli814722/CGI-Lab-Classes
+```
+
+Check it’s set correctly:
+
+```bash
+git remote -v
+```
+
+You should see:
+
+```
+origin  https://github.com/viratkohli814722/CGI-Lab-Classes (fetch)
+origin  https://github.com/viratkohli814722/CGI-Lab-Classes (push)
+```
+
+---
+
+## 2. Commit your local Eclipse project files
+
+Make sure you’ve staged your Eclipse project (if you didn’t yet):
+
+```bash
+git add .
+git commit -m "Initial commit of Eclipse Java project"
+```
+
+---
+
+## 3. Pull remote history (important!)
+
+Since your local repo has **different history** from GitHub, you must allow unrelated histories:
+
+```bash
+git pull origin master --allow-unrelated-histories
+```
+
+### Possible outcomes:
+
+* **No conflicts** → Git will merge automatically. ✅
+* **Conflicts** → Git will show files with conflicts. Open them, fix them manually, then:
+
+  ```bash
+  git add <fixed-file>
+  git commit
+  ```
+---
+
+## 4. Push merged history back to GitHub
+
+```bash
+git push origin master
+
+What to do inside this screen (Vim):
+
+You don’t need to change anything in that message unless you want.
+(It already has a default: “Merge branch ‘master’ of …”)
+
+To save and exit:
+
+Press Esc (to leave INSERT mode).
+
+Type:
+
+:wq
+
+
+then hit Enter.
+
+This means: write (save) and quit.
+
+
+
+
+

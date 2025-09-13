@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-02T09:45:45 IST" name="Default suite" finished-at="2025-09-02T09:45:57 IST" duration-ms="11651">
+    <groups>
+    </groups>
+    <test started-at="2025-09-02T09:45:45 IST" name="Default test" finished-at="2025-09-02T09:45:57 IST" duration-ms="11651">
+      <class name="NewPKG.TC_Screenshot">
+        <test-method signature="screenshottest()[pri:0, instance:NewPKG.TC_Screenshot@6a6cb05c]" started-at="2025-09-02T09:45:45 IST" name="screenshottest" finished-at="2025-09-02T09:45:57 IST" duration-ms="11573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshottest -->
+      </class> <!-- NewPKG.TC_Screenshot -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
